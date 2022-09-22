@@ -68,9 +68,6 @@ section {
     justify-content: space-between;
     padding-bottom: 7rem;
     margin: auto;
-
-
-
 }
 
 .email-box input[type="email"] {
@@ -159,18 +156,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:880px) {
     html {
         font-size: 55%;
@@ -180,8 +165,6 @@ section {
         padding: 18rem 0 8rem 0;
     }
 }
-
-
 
 
 
