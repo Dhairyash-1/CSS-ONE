@@ -1,81 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
 
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-body{
+
+body {
     height: 100%;
     background: hsl(0deg 0% 100%);
-    
-}
-section{
-    padding: 0 2rem;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
 }
 
-.logo{
+section {
+    padding: 0 4em;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
     padding: 4rem 0;
 }
-.logo h1{
+
+.logo h1 {
     font-weight: 700;
     font-size: 3.5rem;
 
 }
-.logo h1 span{
+
+.logo h1 span {
     color: hsl(223, 87%, 63%);
 }
-.text-box{
+
+.text-box {
     text-align: center;
-    /* flex: 1 1 45rem */
 }
- .text-box h1{
+
+.text-box h1 {
     font-size: 4.5rem;
     color: hsl(0, 0%, 59%);
     font-weight: 300;
- }
- .text-box h1 span{
+}
+
+.text-box h1 span {
     color: black;
     font-weight: 700;
- }
- .text-box h3{
+}
+
+.text-box h3 {
     font-size: 2rem;
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
     font-weight: 300;
- }
- .email-box{
+}
+
+.email-box {
     display: flex;
-    width: 60rem;
+    max-width: 60rem;
     justify-content: space-between;
     padding-bottom: 7rem;
-    
+    margin: auto;
 
- }
 
- .email-box input[type="email"]{
+
+}
+
+.email-box input[type="email"] {
     height: 5.5rem;
     border-radius: 3rem;
-    width: 38rem;
+    width: 65%;
     border: .1rem solid hsl(223, 100%, 88%);
     outline: none;
     padding-left: 3rem;
     font-size: 1.6rem;
- } 
- .email-box input[type="button"]{
+
+}
+
+.email-box input[type="button"] {
     height: 5.5rem;
-    width: 20rem;
+    width: 33%;
     border-radius: 3rem;
     background: hsl(223, 87%, 63%);
     outline: none;
@@ -84,35 +95,33 @@ section{
     cursor: pointer;
     font-weight: 600;
     font-size: 1.6rem;
- }
-.email-box input[type="button"]:hover{
+}
+
+.email-box input[type="button"]:hover {
     background: hsl(223, 100%, 75%);
 }
 
-.banner{
+.banner {
     max-width: 60rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin: auto;
 }
 
 .banner .img {
-    flex: 1 1 25rem;
-
-    /* width: 100%; */
-    /* height: 100%; */
     max-width: 60rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
 }
-.banner .img img{
+
+.banner .img img {
     width: 100%;
+    min-width: 30rem;
 }
 
 
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,23 +131,28 @@ section{
 
 
 
-.icons{
+.icons {
     display: flex;
     font-size: 1.5rem;
     gap: 1rem;
     color: hsl(223, 87%, 63%);
     padding-bottom: 3rem;
 }
-.icons .fb,.twitter,.insta{
+
+.icons .fb,
+.twitter,
+.insta {
     border: .1rem solid hsl(0, 0%, 59%);
     padding: .8rem;
     border-radius: 50%;
 }
-.icons div:hover{
+
+.icons div:hover {
     background: hsl(223, 87%, 63%);
     color: white;
 }
-.footer h3{
+
+.footer h3 {
     color: hsl(0, 0%, 59%);
     font-weight: 300;
 }
@@ -157,12 +171,13 @@ section{
 
 
 
-@media(max-width:880px){
-    html{
+@media(max-width:880px) {
+    html {
         font-size: 55%;
     }
-    .footer{
-        padding: 12rem 0;
+
+    .footer {
+        padding: 18rem 0 8rem 0;
     }
 }
 
@@ -170,37 +185,35 @@ section{
 
 
 
-@media(max-width:580px){
-    html{
+@media(max-width:580px) {
+    html {
         font-size: 50%;
     }
-    .email-box{
+
+    .email-box {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
-   
-    .email-box input[type="button"]{
-        width: 38rem;
-    
+
+    .email-box input[type=email] {
+        width: 100%;
     }
-}
-@media(max-width:450px){
-    html{
-        font-size: 42%;
-    }
-    .text-box h1{
-        font-size: 3.5rem;
-    }
-    .text-box h3{
-        font-size: 1.5rem;
-    }
-  
-}
-@media(max-width:420px){
-    .container .img img{
-        width: calc(100% - 4rem);
+
+    .email-box input[type="button"] {
+        width: 100%
     }
 }
 
+@media(max-width:500px) {
+
+    .text-box h1 {
+        font-size: 3.5rem;
+    }
+
+    .text-box h3 {
+        font-size: 1.5rem;
+    }
+
+}
